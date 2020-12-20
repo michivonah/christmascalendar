@@ -6,7 +6,7 @@ A easy to use and free online christmascalendar.
 - Create an own calendar
 
 ### Create your own calendar
-1. Download the links.json file.
+1. Download the links.json file. (To open and edit the file you can use the windows notepad.)
 2. Change title to the name of your calendar.
 3. Change the creatorsname to your name. It will be showed under the name of your calendar.
 4. Than you can change the links for each day. (Day one is the field doornum 1)
