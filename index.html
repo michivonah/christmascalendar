@@ -31,8 +31,8 @@
 
       <div id="content">
         <div id="home">
-          <h1>Christmascalendar <i class="fas fa-gifts"></i></h1>
-          <a href="https://github.com/michivonah"><p>by Michi</p></a>
+          <h1 id="calendartitle">Christmascalendar <i class="fas fa-gifts"></i></h1>
+          <a href="#"><p id="creatorsname">by Michi</p></a>
         </div>
         <div id="doors">
           <div class="door 1"><p>1</p></div>
@@ -74,6 +74,19 @@
       // Loading
       $(window).on("load", function(){
         $("#loading-screen").fadeOut(750);
+        if(window.location.search != ''){
+          var url = window.location.search;
+          var jsonurl = url.replace('?data=', '');
+          console.log("Load data from: " + jsonurl);
+        }
+        else{
+          var jsonurl = "https://michivonah.github.io/christmascalendar/links.json";
+        }
+        $.getJSON(jsonurl, function(data) {
+          $("#creatorsname").text("by " + data.creatorsname);
+          $("#calendartitle").text(data.title);
+        });
+
       });
 
       // open the door script
@@ -85,19 +98,25 @@
         var day = getdate.getDate();
         var month = getdate.getMonth();
         console.log(getdate);
+
         if(day >= doornum){
           console.log("Door " + doornum + " clicked.");
-          //alert("Yeah, you can open this door.");
-          //window.open("#");
-          $.getJSON('links.json', function(data) {
-            var test = data.links['1'].link;
-            console.log(test);
-            //window.open("test");
+          if(window.location.search != ''){
+            var url = window.location.search;
+            var jsonurl = url.replace('?data=', '');
+            console.log("Load data from: " + jsonurl);
+          }
+          else{
+            var jsonurl = "https://michivonah.github.io/christmascalendar/links.json";
+          }
+          $.getJSON(jsonurl, function(data) {
+            var link = data.links[doornum].link;
+            console.log("Open " + link + " in a new tab.");
+            window.open(link);
           });
         }
         else{
           console.log("Door " + doornum + " clicked.");
-          //alert("You are to early to open this door. Sorry.")
           $('.toearly').css('display', 'block');
         }
        });
