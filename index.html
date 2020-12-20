@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <title>Christmascalendar</title>
+         <meta name="apple-mobile-web-app-title" content="Christmascalendar">
+         <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2016/09/14/20/48/birthday-1670415_960_720.png">
+         <link rel="shortcut icon" type="image/svg+xml" href="icons/favicon.svg">
+         <link rel="apple-touch-icon" href="icons/favicon.svg" sizes="any">
+         <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" sizes="any">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+         <link rel="stylesheet" type="text/css" href="style.css"/>
+         <script language="javascript" type="text/javascript" src="script.js"></script>
+         <meta charset="UTF-8">
+         <meta name="theme-color" content="#000000">
+         <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+         <meta name="mobile-web-app-capable" content="yes">
+         <meta name="apple-mobile-web-app-capable" content="yes">
+         <link rel="manifest" href="manifest.json">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+</head>
+<body>
+
+          <!-- Loadingscreen -->
+      <div id="loading-screen">
+        <div id="loading"></div>
+      </div>
+
+      <div id="content">
+        <div id="home">
+          <h1>Christmascalendar <i class="fas fa-gifts"></i></h1>
+          <a href="https://github.com/michivonah"><p>by Michi</p></a>
+        </div>
+        <div id="doors">
+          <div class="door 1"><p>1</p></div>
+          <div class="door 2"><p>2</p></div>
+          <div class="door 3"><p>3</p></div>
+          <div class="door 4"><p>4</p></div>
+          <div class="door 5"><p>5</p></div>
+          <div class="door 6"><p>6</p></div>
+          <div class="door 7"><p>7</p></div>
+          <div class="door 8"><p>8</p></div>
+          <div class="door 9"><p>9</p></div>
+          <div class="door 10"><p>10</p></div>
+          <div class="door 11"><p>11</p></div>
+          <div class="door 12"><p>12</p></div>
+          <div class="door 13"><p>13</p></div>
+          <div class="door 14"><p>14</p></div>
+          <div class="door 15"><p>15</p></div>
+          <div class="door 16"><p>16</p></div>
+          <div class="door 17"><p>17</p></div>
+          <div class="door 18"><p>18</p></div>
+          <div class="door 19"><p>19</p></div>
+          <div class="door 20"><p>20</p></div>
+          <div class="door 21"><p>21</p></div>
+          <div class="door 22"><p>22</p></div>
+          <div class="door 23"><p>23</p></div>
+          <div class="door 24"><p>24</p></div>
+        </div>
+      </div>
+
+      <div class="alert toearly">
+        <h1>Oh no!</h1>
+        <p>You can't open this door today. You are to early for this.</p>
+        <i class="fas fa-times-circle close-btn"></i>
+      </div>
+
+
+
+      <script>
+      // Loading
+      $(window).on("load", function(){
+        $("#loading-screen").fadeOut(750);
+      });
+
+      // open the door script
+      $(".door").click(function(){
+        var doornum = this.className.replace('door ', '').replace('past', '').replace('today', '').replace('future', '');
+        var getdate = new Date();
+        var h = getdate.getHours();
+        var min = getdate.getMinutes();
+        var day = getdate.getDate();
+        var month = getdate.getMonth();
+        console.log(getdate);
+        if(day >= doornum){
+          console.log("Door " + doornum + " clicked.");
+          //alert("Yeah, you can open this door.");
+          //window.open("#");
+          $.getJSON('links.json', function(data) {
+            var test = data.links['1'].link;
+            console.log(test);
+            //window.open("test");
+          });
+        }
+        else{
+          console.log("Door " + doornum + " clicked.");
+          //alert("You are to early to open this door. Sorry.")
+          $('.toearly').css('display', 'block');
+        }
+       });
+
+       $(".close-btn").click(function(){
+         $('.alert').css('display', 'none');
+       });
+      </script>
+</body>
+</html>
