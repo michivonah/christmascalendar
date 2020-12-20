@@ -17,3 +17,5 @@ Example:
 ```html
 https://michivonah.github.io/christmascalendar/?data=https://michivonah.github.io/christmascalendar/links.json
 ```
+### Disclaimer
+I am not responsible for user-generated content. This site is for entertainment only.
