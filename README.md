@@ -12,8 +12,10 @@ A easy to use and free online christmascalendar.
 4. Than you can change the links for each day. (Day one is the field doornum 1)
 5. After you filled out all fields, you have to publish your .json file on a hosting service.
 6. Now you can embed or visit your calendar on this URL: https://michivonah.github.io/christmascalendar
-But you need to add at the end of this url a ?data= parameter followed by the link to your .json file.
+But you need to add at the end of this url a ?data= parameter followed by the link to your .json file. If you don't do this, the standard calendar will be loaded.
+<br>
 Example:
+
 ```html
 https://michivonah.github.io/christmascalendar/?data=https://michivonah.github.io/christmascalendar/links.json
 ```
