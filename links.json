@@ -1,6 +1,7 @@
 {
-	"name": "Christmascalendar",
+	"title": "Christmascalendar",
 	"lang": "EN",
+  "creatorsname": "Michi",
 	"links": [{
 			"doornum": "1",
       "link": "#"
