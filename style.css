@@ -5,6 +5,9 @@ body{
    padding: 0;
    color: #000;
    background: #e9f7ef;
+   /*background-image: url(background.jpg);*/
+   background-repeat: no-repeat;
+   background-size: cover;
    text-align: left;
    font-family: "Open Sans", sans-serif;
    }
@@ -134,6 +137,19 @@ body{
    text-decoration: underline;
    color: #000;
    }
+
+   @media screen and (max-width:600px){
+      .door {
+        width: 40%;
+        height: 40vw;
+      }
+    }
+
+    @media screen and (max-width:250px){
+       .door {
+         display: none;
+       }
+     }
 
 
    @keyframes loading{
