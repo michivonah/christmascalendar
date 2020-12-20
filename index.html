@@ -84,7 +84,8 @@
         }
         $.getJSON(jsonurl, function(data) {
           $("#creatorsname").text("by " + data.creatorsname);
-          $("#calendartitle").text(data.title);
+          $("#calendartitle").text(data.title + "🎁");
+           document.body.style.backgroundImage = "url('" + data.background + "')";
         });
 
       });
