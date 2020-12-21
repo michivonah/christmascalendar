@@ -68,6 +68,13 @@
         <i class="fas fa-times-circle close-btn"></i>
       </div>
 
+      <div class="alert open-door">
+        <h1 id="day-num">Day 1</h1>
+        <p id="day-content">Content</p>
+        <a id="day-link" href="#"><button id="day-btn">Open Link!</button></a>
+        <i class="fas fa-times-circle close-btn"></i>
+      </div>
+
 
 
       <script>
@@ -84,7 +91,7 @@
         }
         $.getJSON(jsonurl, function(data) {
           $("#creatorsname").text("by " + data.creatorsname);
-          $("#calendartitle").text(data.title + "🎁");
+          $("#calendartitle").text(data.title + " 🎁");
            document.body.style.backgroundImage = "url('" + data.background + "')";
         });
 
@@ -113,7 +120,12 @@
           $.getJSON(jsonurl, function(data) {
             var link = data.links[doornum].link;
             console.log("Open " + link + " in a new tab.");
-            window.open(link);
+            //window.open(link);
+            $("#day-num").text("Day " + doornum);
+            $("#day-content").text(data.links[doornum].text);
+            $("#day-button").text(data.links[doornum].buttontext);
+            document.getElementById("day-link").href = data.links[doornum].link;
+            $('.open-door').css('display', 'block');
           });
         }
         else{
@@ -124,6 +136,7 @@
 
        $(".close-btn").click(function(){
          $('.alert').css('display', 'none');
+         $('.open-door').css('display', 'none');
        });
       </script>
 </body>
