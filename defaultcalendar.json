@@ -48,27 +48,27 @@
 		},
     {
 			"doornum": "8",
-			"text": "Hello World!",
-			"buttontext": "Open Link!",
-			"link": "#"
+			"text": "Today its the perfect day to learn new languages.",
+			"buttontext": "Duolingo!",
+			"link": "https://www.duolingo.com/"
 		},
     {
 			"doornum": "9",
-			"text": "Hello World!",
-			"buttontext": "Open Link!",
-			"link": "#"
+			"text": "Do you want play a round Minecraft Classic?",
+			"buttontext": "Open Minecraft Classic!",
+			"link": "https://classic.minecraft.net/"
 		},
     {
 			"doornum": "10",
-			"text": "Hello World!",
-			"buttontext": "Open Link!",
-			"link": "#"
+			"text": "Do you want play a round agar.io?",
+			"buttontext": "Go for it!",
+			"link": "https://agar.io"
 		},
     {
 			"doornum": "11",
-			"text": "Hello World!",
+			"text": "Play a platformer.",
 			"buttontext": "Open Link!",
-			"link": "#"
+			"link": "https://scratch.mit.edu/projects/452873473/embed"
 		},
     {
 			"doornum": "12",
