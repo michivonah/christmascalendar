@@ -72,9 +72,9 @@
 		},
     {
 			"doornum": "12",
-			"text": "Hello World!",
+			"text": "Do you want play a round of Swiss Jass?",
 			"buttontext": "Open Link!",
-			"link": "#"
+			"link": "https://www.jassfederal.ch"
 		},
     {
 			"doornum": "13",
