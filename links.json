@@ -2,101 +2,150 @@
 	"title": "Christmascalendar",
 	"lang": "EN",
   "creatorsname": "Michi",
+  "background": "https://michivonah.github.io/christmascalendar/background.jpg",
 	"links": [{
 			"doornum": "1",
-      "link": "#"
+      "text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
 		{
 			"doornum": "2",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "3",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "4",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "5",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "6",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "7",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "8",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "9",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "10",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "11",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "12",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "13",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "14",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "15",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "16",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "17",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "18",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "19",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "20",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "21",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "22",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "23",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		},
     {
 			"doornum": "24",
-      "link": "#"
+			"text": "Hello World!",
+			"buttontext": "Open Link!",
+			"link": "#"
 		}
 	]
 }
