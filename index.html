@@ -91,6 +91,7 @@
         }
         $.getJSON(jsonurl, function(data) {
           $("#creatorsname").text("by " + data.creatorsname);
+          document.getElementById("creatorsname").href = data.creatorsurl;
           $("#calendartitle").text(data.title + " 🎁");
            document.body.style.backgroundImage = "url('" + data.background + "')";
         });
