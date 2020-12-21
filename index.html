@@ -87,7 +87,7 @@
           console.log("Load data from: " + jsonurl);
         }
         else{
-          var jsonurl = "https://michivonah.github.io/christmascalendar/links.json";
+          var jsonurl = "https://michivonah.github.io/christmascalendar/defaultcalendar.json";
         }
         $.getJSON(jsonurl, function(data) {
           $("#creatorsname").text("by " + data.creatorsname);
@@ -116,7 +116,7 @@
             console.log("Load data from: " + jsonurl);
           }
           else{
-            var jsonurl = "https://michivonah.github.io/christmascalendar/links.json";
+            var jsonurl = "https://michivonah.github.io/christmascalendar/defaultcalendar.json";
           }
           $.getJSON(jsonurl, function(data) {
             var link = data.links[doornum].link;
