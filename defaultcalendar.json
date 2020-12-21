@@ -24,15 +24,15 @@
 		},
     {
 			"doornum": "4",
-			"text": "Hello World!",
+			"text": "I wish you a nice day.",
 			"buttontext": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "5",
-			"text": "Hello World!",
-			"buttontext": "Open Link!",
-			"link": "#"
+			"text": "Do you want play a game?",
+			"buttontext": "Open Geoguesr!",
+			"link": "https://www.geoguessr.com/"
 		},
     {
 			"doornum": "6",
@@ -42,9 +42,9 @@
 		},
     {
 			"doornum": "7",
-			"text": "Hello World!",
-			"buttontext": "Open Link!",
-			"link": "#"
+			"text": "Do you like the minions?",
+			"buttontext": "Go to YouTube!",
+			"link": "https://youtu.be/0tQRXl4nsww"
 		},
     {
 			"doornum": "8",
