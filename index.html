@@ -10,7 +10,6 @@
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
          <link rel="stylesheet" type="text/css" href="style.css"/>
-         <script language="javascript" type="text/javascript" src="script.js"></script>
          <meta charset="UTF-8">
          <meta name="theme-color" content="#000000">
          <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
@@ -60,6 +59,9 @@
           <div class="door 23"><p>23</p></div>
           <div class="door 24"><p>24</p></div>
         </div>
+        <div id="footer">
+          <a href="https://github.com/michivonah/christmascalendar">Github</a>
+        </div>
       </div>
 
       <div class="alert toearly">
@@ -71,6 +73,7 @@
       <div class="alert open-door">
         <h1 id="day-num">Day 1</h1>
         <p id="day-content">Content</p>
+        <img id="day-img" src="background.jpg">
         <a id="day-link" href="#"><button id="day-btn">Open Link!</button></a>
         <i class="fas fa-times-circle close-btn"></i>
       </div>
@@ -94,6 +97,8 @@
           document.getElementById("creatorsname").href = data.creatorsurl;
           $("#calendartitle").text(data.title + " 🎁");
            document.body.style.backgroundImage = "url('" + data.background + "')";
+           $("#calendartitle").css('color', data.textcolor);
+           $("#creatorsname").css('color', data.textcolor);
         });
 
       });
@@ -118,19 +123,34 @@
           else{
             var jsonurl = "https://michivonah.github.io/christmascalendar/defaultcalendar.json";
           }
+          // get the data from json file
           $.getJSON(jsonurl, function(data) {
             var link = data.links[doornum].link;
             console.log("Open " + link + " in a new tab.");
-            //window.open(link);
             $("#day-num").text("Day " + doornum);
-            $("#day-content").text(data.links[doornum].text);
-            $("#day-button").text(data.links[doornum].buttontext);
-            document.getElementById("day-link").href = data.links[doornum].link;
+            $("#day-content").text(data.links[doornum-1].text);
+            $("#day-btn").text(data.links[doornum-1].buttontext);
+            document.getElementById("day-link").href = data.links[doornum-1].link;
+            // check whether a picture is available
+            if(data.links[doornum-1].image !== "#"){
+              document.getElementById("day-img").src = data.links[doornum-1].image;
+              $('#day-img').css('display', 'block');
+              //$("#day-num").text(data.links[doornum-1].image);
+            }
+            else if(data.links[doornum-1].image !== ""){
+              $('#day-img').css('display', 'none');
+            }
+            else{
+              $('#day-img').css('display', 'none');
+            }
+            // show the door content
             $('.open-door').css('display', 'block');
           });
         }
         else{
+          // the door can't opened today
           console.log("Door " + doornum + " clicked.");
+          console.log("Oh no, you are to early to open this door.");
           $('.toearly').css('display', 'block');
         }
        });
@@ -138,6 +158,7 @@
        $(".close-btn").click(function(){
          $('.alert').css('display', 'none');
          $('.open-door').css('display', 'none');
+         $('#day-img').css('display', 'none');
        });
       </script>
 </body>
