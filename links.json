@@ -3,149 +3,174 @@
 	"lang": "EN",
   "creatorsname": "Michi",
 	"creatorsurl": "#",
+	"textcolor": "#000",
   "background": "https://michivonah.github.io/christmascalendar/background.jpg",
 	"links": [{
 			"doornum": "1",
       "text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
 		{
 			"doornum": "2",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "3",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "4",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "5",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "6",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "7",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "8",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "9",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "10",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "11",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "12",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "13",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "14",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "15",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "16",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "17",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "18",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "19",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "20",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "21",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "22",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "23",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		},
     {
 			"doornum": "24",
 			"text": "Hello World!",
 			"buttontext": "Open Link!",
+			"image": "Open Link!",
 			"link": "#"
 		}
 	]
