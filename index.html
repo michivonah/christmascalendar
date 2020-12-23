@@ -25,7 +25,7 @@
 
           <!-- Loadingscreen -->
       <div id="loading-screen">
-        <div id="loading"><img src="https://cdn.pixabay.com/photo/2016/11/30/22/10/deer-1874005_960_720.png"></div>
+        <div id="loading"><img src="https://michivonah.github.io/christmascalendar/loading-icon.png"></div>
       </div>
 
       <div id="content">
@@ -79,12 +79,29 @@
         <i class="fas fa-times-circle close-btn"></i>
       </div>
 
+      <div class="alert info">
+        <h1>About</h1>
+        <p>This is a free to use and open source online christmascalendar. You can create your own calendar with the introductions on Github.</p>
+        <p>Version 1.4.0</p>
+        <a href="https://github.com/michivonah/christmascalendar"><button>Github <i class="fab fa-github"></i></button></a>
+        <i class="fas fa-times-circle close-btn"></i>
+      </div>
+
+      <a href="#"><div id="scroll-top" class="fixed-btns">
+        <i class="fas fa-chevron-up"></i>
+      </div></a>
+
+      <div id="info-btn" class="fixed-btns">
+        <i class="fas fa-infinity"></i>
+      </div>
+
 
 
       <script>
       // Loading
       $(window).on("load", function(){
         $("#loading-screen").fadeOut(750);
+        $('.fixed-btns').css('display', 'none');
         if(window.location.search != ''){
           var url = window.location.search;
           var jsonurl = url.replace('?data=', '');
@@ -176,7 +193,22 @@
          $('.open-door').css('display', 'none');
          $('#day-img').css('display', 'none');
          $('#day-iframe').css('display', 'none');
+         $('.info').css('display', 'none');
        });
+
+       // fixed buttons
+       $(window).scroll(function(){
+        if(this.scrollY > 20){
+          $('.fixed-btns').css('display', 'flex');
+        }
+        else{
+          $('.fixed-btns').css('display', 'none');
+        }
+      });
+
+      $("#info-btn").click(function(){
+        $('.info').css('display', 'block');
+      });
       </script>
 </body>
 </html>
