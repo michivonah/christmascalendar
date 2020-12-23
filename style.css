@@ -50,6 +50,48 @@ body{
 
    #footer{
    text-align: center;
+   display: none;
+   }
+
+   #scroll-top{
+   width: 40px;
+   height: 40px;
+   background: #9b59b6;
+   border-radius: 12px;
+   margin: 15px;
+   bottom: 0;
+   right: 0;
+   position: fixed;
+   justify-content: center;
+   display: flex;
+   font-size: 28px;
+   color: #fff;
+   transition: .1s linear;
+   }
+
+   #info-btn{
+   width: 40px;
+   height: 40px;
+   background: #9b59b6;
+   border-radius: 12px;
+   margin: 15px;
+   bottom: 0;
+   left: 0;
+   position: fixed;
+   justify-content: center;
+   display: flex;
+   font-size: 26px;
+   color: #fff;
+   transition: .1s linear;
+   }
+
+   .fixed-btns i{
+   margin-top: 5px;
+   transition: .1s linear;
+   }
+
+   .fixed-btns i:hover{
+   margin-top: 0px;
    }
 
    #doors{
