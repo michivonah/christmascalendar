@@ -119,6 +119,19 @@
            $("#creatorsname").css('color', data.textcolor);
         });
 
+        var getdate = new Date();
+        var day = getdate.getDate();
+        console.log(getdate);
+        var dayclass = "." + day;
+        $(dayclass).css("background", "#9b59b6");
+        if(day >= 24){
+          $("#day-num").text("Dear Christmas friend");
+          $("#day-content").text("This year, Christmas Eve is already over. So you can now open all the doors at once if you want. You now have enough time to create your own advent calendar for next year with this tool. You can find out how to do this on Github, just click on the button below. See you next December.");
+          $("#day-btn").text("Go to Github!");
+          document.getElementById("day-link").href = "https://github.com/michivonah/christmascalendar#readme";
+          $('.open-door').css('display', 'block');
+        }
+
       });
 
       // open the door script
@@ -145,7 +158,7 @@
           // get the data from json file
           $.getJSON(jsonurl, function(data) {
             var link = data.links[doornum].link;
-            console.log("Open " + link + " in a new tab.");
+            console.log("Link of the door " + doornum + " is " + link + ".");
             $("#day-num").text("Day " + doornum);
             $("#day-content").text(data.links[doornum-1].text);
             $("#day-btn").text(data.links[doornum-1].buttontext);
